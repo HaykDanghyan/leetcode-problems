@@ -1,15 +1,19 @@
 class Solution {
 public:
     std::vector<int> twoSum(std::vector<int>& numbers, int target) {
-        std::unordered_map<int, int> mp;
-        for (int i = 0; i < numbers.size(); ++i) {
-            auto it = mp.find(target - numbers[i]);
-            if (it != mp.end()) {
-                return {it->second + 1, i + 1};
-            } else {
-                mp.insert({numbers[i], i});
+        int left = 0;
+        int right = numbers.size() - 1;
+        while (left < right) {
+            int sum = numbers[left] + numbers[right];
+            if (sum == target) {
+                return {left + 1, right + 1};
             }
-        } 
+            if (sum < target) {
+                ++left;
+            } else {
+                --right;
+            }
+        }
         return {-1, -1};
     }
 };
