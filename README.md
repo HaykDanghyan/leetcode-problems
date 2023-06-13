@@ -1,3 +1,9 @@
+![Language1](https://img.shields.io/badge/Language-Python-blue.svg?logo=Python&logoColor=yellow) 
+![Language2](https://img.shields.io/badge/Language-C++-yellowgreen.svg?logo=c%2B%2B&logoColor=yellow) 
+![Language3](https://img.shields.io/badge/Language-Java-orange.svg?logo=Java&logoColor=yellow) 
+![Update](https://img.shields.io/badge/Update-Daily-green.svg)
+
+
 # LeetCode Problem Solutions
 
 ## Introduction
